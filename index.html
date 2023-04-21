@@ -1,0 +1,184 @@
+<!--Hola soy andrea Avendaño Aguilar y este es mi archivo html para mi Clon de GOOGLE-->
+
+<!--NOTA: Para poner los elemntos basicos de html, como !DOCTYPE html, head y body
+basta con poner ! y seleccionar la primera opcion-->
+
+<!DOCTYPE html>
+
+<html lang="es "> <!--lenguaje (lang) español (es)-->
+
+<!--en head tenemos todos nuestros metadatos (etiquetas meta) que es info extra para el browser, para nuestros navegadores-->
+<!--Información para el navegador-->
+<head>
+    <meta charset="UTF-8"> <!--charset es un set de caracteres que le permite decirle a los navegadores que vamos a utilizar ciertos caracteres especiales (acentos, emogis, etc.)-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--tìtulo de la pàgina web, es el que aparece en la pestaña del navegador-->
+    <title>Clon de GOOGLE</title>
+
+    <!--asì se conecta html con css-->
+        <!--el atributo REL es la relaciòn, en este caso es stylesheet=hoja de estilo-->
+        <!--en el atributo HREF se pone donde esta el documento css. Se puede poner / al principio o no para indicaar la carpeta, 
+            se debe probar si funciona con ambos por que a veces conecta o no-->
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<!--En el body estan las cosas mas importante, mas relevantes de una pagina web-->
+<!--lo que el usuario ve-->
+<body>
+    <!--Realizaremos el header de Google-->
+
+    <!--En el HEADER Se va encontrar la info principal de la pagina y donde casi siempre se encuetra la navegacion de la pàgina-->
+        <!--Es una divisiòn de contenido-->
+    <header>
+        <!--NAV elemento de secciòn de navegación-->
+            <!--representa una secciòn de una pàgina, su proposito es proporcionar enlaces de navegaciòn, ya sea dentro del documento actual o a otros documentos. 
+                Ejemplos: menùs, tablas de contenido, ìndices, etc.-->
+        <nav>
+            <!--UL unordered list (lista no ordenada)-->
+            <!--LI items de la lista-->
+                <!--'a' elemento de acla (anchor=ancla), crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página,
+                direcciones de correo o cualquier otra URL, interna o externa-->
+                    <!--href - hacia donde vamos-->
+            <ul class="nav-rigth-section">
+                <li>
+                    <a href="https://www.google.com/intl/es-419/gmail/about/">Gmail</a>
+                </li> 
+
+                <li>
+                    <a href="https://www.google.com.mx/imghp?hl=es&ogbl">Imágenes</a>
+                </li>
+                  
+                <!--una forma mas limpia para no tener muchos links es llevando la parte de la imagen a css usando la clase-->
+                <!--NOTA: El HTML debe estar lo màs limpio posible-->
+                <li class="menu">
+                    <a href=""><!--<img src="/Imágenes/menu.png" alt="Menú">--></a>
+                </li>
+
+                <li>
+                    <a href=""><input class="boton" type="button" value="Acceder"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<!--Continuamos en la sesiòn 6-->
+
+    <!--Es como un div, pero es como si dijeramos que aquí esta el contenido más general, el más importante-->
+    <!--división y lo más importante-->
+    <main>
+    <!--Vmos a crear unas secciones o divisiones-->
+        <!--En orden de jerarquía primero viene la parte de 'sección' y la de 'div' pueden ser como secciones más chicas-->
+        <!--Esto depende de cada programador, porque en sí se pueden usar purod 'div' en lugar de main, section..., pero el código se hace más difícil de leer-->
+    <!--NOTA:traten de que los nobres de las Clases tengan un nombre que tenga sentido, que este relacionado en donde esta posicionada o a lo que estamos modificando-->
+
+        <!--Sección logo-->
+        <section class="main-logo">
+            <img src="https://www.google.es/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Logo de Google">
+        </section>
+
+        <!--SPAN va a envolver al elemento input, por que Span es un contenedor  para aplicar estilo al texto y agrupar elementos en una línea-->
+            <!--todo lo que tenga que ver dentro del texto, debería ía estar dentro de un span-->
+            <!--tambien se utilza para poner algunas palabras de ciertos colores en alguna o algunas secciones de un parrafo por ejemplo-->
+
+        <!--Sección buscador-->
+        <section class="main-input">
+            <!--creamos un div pra tener mayor orden y contros ya que tenemos muchos elementos-->
+            <div class="main-input-container">
+                <span class="search-icon"></span>
+                <input type="text">
+                <a class="micro-icon" href=""></a>
+                <a class="cam-icon" href=""></a>
+            </div>
+        </section>
+
+        <!--botones-->
+        <!--ponemos un div para cada boton, de esta manera vamos a poder tener mas control para editar cada uno de ellos individualmente-->
+
+        <section class="main-buttons">
+            <div>
+                <button>Buscar con Google</button>
+            </div>
+
+            <div>
+                <button>Voy a tener suerte</button>
+            </div>
+        </section>
+       
+        <!--despues de los botones-->
+        <section class="despues-botones">
+            <p>Ofrecido por Google en: <a href="https://www.google.es/">Español (Latinoamérica)</a></p> 
+        </section>
+
+    </main>
+
+    <!--viene la informaciòn extra (informaciòn de contacto, etc.)-->
+    <footer>
+
+        <div class="country">
+            <p>México</p>
+        </div>
+
+        <section class="more">
+
+            <ul class="foot-left">
+                <li><a href="https://about.google/?utm_source=google-MX&utm_medium=referral&utm_campaign=hp-footer&fg=1">Sobre Google</a></li>
+                <li><a href="https://ads.google.com/intl/es-419_mx/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2m--ahpm-0000000131-0000000001&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicidad</a></li>
+                <li><a href="https://smallbusiness.withgoogle.com/intl/es-419_mx/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=ww-ww-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u&c=MX#!/">Negocios</a></li>
+                <li><a href="https://www.google.com/search/howsearchworks/?fg=1">Cómo funciona la Busqueda</a></li>        
+            </ul>
+
+            <ul class="foot-right">
+                <li><a href="https://policies.google.com/privacy?hl=es-419&fg=1">Privacidad</a></li>
+                <li><a href="https://policies.google.com/terms?hl=es-419&fg=1">Condiciones</a></li>
+                <li><a href="">Preferencias</a></li>
+            </ul>
+        </section>
+
+    </footer>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
